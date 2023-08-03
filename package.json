@@ -1,18 +1,22 @@
 {
-  "name": "dogs",
+  "name": "my-app",
+  "homepage": "https://arthurbernardos.github.io/doggram",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
-    "prop-types": "^15.8.1",
+    "react-scripts": "^2.1.3",
     "victory": "^36.6.8"
   },
   "devDependencies": {
@@ -22,6 +26,7 @@
     "eslint": "^8.38.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "vite": "^4.2.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-svgr": "^2.4.0"
